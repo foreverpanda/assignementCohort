@@ -17,10 +17,6 @@
 */
 
 class Calculator {}
-  // let result;
-  // constructor(exp){
-
-  // }
 
 
 module.exports = Calculator;
