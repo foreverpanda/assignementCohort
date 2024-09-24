@@ -15,7 +15,7 @@ function fileReadingFn(fileName) {
   });
 }
 
-function fileWritingFn(fileName,newData) {
+function fileWritingFn(fileName, newData) {
   return new Promise((resolve) => {
     fs.writeFile(fileName, newData, (err, content) => {
       if (!err) {
@@ -29,8 +29,8 @@ async function cleaner() {
   await fileReadingFn("./file.txt");
   console.log("Fetched file : ", data);
   removeSpace(data);
-  console.log("Filered Data : ",filteredData);
-  fileWritingFn("./file.txt",filteredData)
+  console.log("Filered Data : ", filteredData);
+  fileWritingFn("./file.txt", filteredData);
 }
 
 cleaner();
